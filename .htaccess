@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{REQUEST_URI} ^$
+RewriteCond %{HTTP_HOST} ^example.com$
+RewriteRule ^$ http://example.com/index.php [L,R=301]
