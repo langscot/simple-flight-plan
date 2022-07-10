@@ -1,0 +1,16 @@
+/* Select all elements with a title attribute */
+[data-bs-toggle='tooltip']:hover {
+  background-color: yellow;
+}
+
+:root {
+  --ggs: 1;
+}
+
+#map {
+  height: 800px;
+}
+
+body {
+  margin-bottom: 200px;
+}
