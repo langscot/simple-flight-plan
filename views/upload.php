@@ -8,7 +8,7 @@ if (isset($_POST["submit"])) {
     // Set a cookie for the user called 'flightPlan' with the filename as the value
     setcookie("flightPlan", $_FILES["flightPlan"]["name"], time() + (86400 * 30), "/");
     // Redirect to /plan
-    header("Location: /plan");
+    header("Location: /plan?plan_name=" . $_FILES["flightPlan"]["name"]);
   } else {
     // Set error
     $error = 'Please upload a valid .xml flight plan from SimBrief.';

@@ -1,10 +1,17 @@
 <?php
+
 // Get the flightPlan cookie
-$flightPlan = $_COOKIE['flightPlan'];
+if (isset($_GET['plan_name'])) {
+	$filename = $_GET['plan_name'];
+	setcookie("flightPlan", $filename);
+} else {
+	$filename = $_COOKIE['flightPlan']; 
+}
+
 // Try and load the flight plan from uploads folder
-$flightPlan = simplexml_load_file('uploads/' . $flightPlan);
+$flightPlan = simplexml_load_file('uploads/' . $filename);
 // If no file exists, redirect to upload.php
-if (!$flightPlan) {
+if (!$flightPlan)  {
   header("Location: /");
 }
 
