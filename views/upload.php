@@ -20,6 +20,8 @@ if (isset($_POST["submit"])) {
   <h3>Upload your SimBrief flight plan</h3>
   <a class='btn btn-secondary mt-2' href="https://www.simbrief.com" target="_blank" rel="noreferrer">Click here to visit SimBrief.</a>
 
+	<p class="mt-2 text-secondary">Generate a flight plan on the SimBrief website and then download it as an .XML file. Then upload it here!</p>
+
   <form action="/" method="post" enctype="multipart/form-data" class='mt-5'>
     <input type="file" name="flightPlan" id="flightPlan" accept=".xml" required/>
     <input type="submit" class="btn btn-primary" name="submit" value="Upload"/>
@@ -30,4 +32,6 @@ if (isset($_POST["submit"])) {
       <?php echo $error; ?>
     </div>
   <?php } ?>
+
+	<a href="https://fly.weirdjet.com/plan?plan_name=EGPFLFPG_XML_1657446854.xml" class="mt-4 btn btn-large btn-primary">Click here to view an example flight plan!</a>
 </main>
