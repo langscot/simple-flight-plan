@@ -14,7 +14,7 @@ It basically shows you the most important information you will need during fligh
   - Stage (climb, cruise, decent)
   - Speed
 - Fuel required and broken down (taxi, enroute burn, alternate burn etc)
-- A crude map of each waypoint. Incomplete, but should give you a decent idea of where you are at each waypoint.
+- A crude map of each waypoint. Incomplete, but should give you a decent idea of where you are at each waypoint geographically.
 
 ## Disclaimer
 
