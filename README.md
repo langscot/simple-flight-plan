@@ -1,6 +1,6 @@
 # How to use
 
-Visit https://fly.weirdjet.com and upload your SimBrief XML flight plan.
+Clone the git repository and run `php -S localhost:8080` to start a simple web server. Visit `http://localhost:8080` to view the site.
 
 ## What it does
 
